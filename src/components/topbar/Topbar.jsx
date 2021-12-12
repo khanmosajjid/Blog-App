@@ -61,7 +61,7 @@ export default function Topbar() {
               </NavItem>
               <NavItem>
                 <NavLink href="/settings">
-                Setting
+                Settings
                 </NavLink>
               </NavItem>
               
