@@ -4,7 +4,7 @@ import './App.css';
 import Login from './components/Login';
 import { selectUser } from './features/userSlice';
 import { useSelector } from 'react-redux';
-import Logout from './components/Logout';
+
 import Register from './components/register/Register'
 import Homepage from "./components/homepage/Homepage"
 import Topbar from "./components/topbar/Topbar"
