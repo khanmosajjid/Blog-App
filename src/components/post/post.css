@@ -1,8 +1,11 @@
 .post {
-  width: 385px;
-  margin: 0px 25px 40px 25px;
+  /* width: 385px; */
+  /* margin: 0px 25px 40px 25px; */
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .postImg {
@@ -58,4 +61,13 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+@media(max-width:600px){
+  .postImg {
+    width: 345px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
 }
