@@ -3,14 +3,23 @@ import { useDispatch } from 'react-redux';
 import { logout, selectUser } from '../features/userSlice';
 import { useSelector } from 'react-redux';
 
-export const Logout = () => {
-    const user=useSelector(selectUser)
+ const Logout = () => {
+   
     const dispatch=useDispatch()
     const handleLogout=(e)=>{
         e.preventDefault();
-       
+       window.localStorage.removeItem('user')
         dispatch(logout());
+        
     }
+    const getData=()=>{
+        let user=localStorage.getItem('user');
+        user=JSON.parse(user);
+       
+        return user;
+        
+    }
+    const user=getData()
     return (
         <div>
             <h1>Welcome <span className="user_name">{user.name}</span></h1>
@@ -20,3 +29,5 @@ export const Logout = () => {
         </div>
     )
 }
+
+export default Logout;

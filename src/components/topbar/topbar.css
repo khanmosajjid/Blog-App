@@ -1,0 +1,20 @@
+.navbar-collapse{
+  justify-content: end;
+}
+.profile-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.logout__btn{
+color: #6c757d !important;
+background-color: transparent !important;
+border-color: transparent !important;
+}
+.ml-auto{
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+}
